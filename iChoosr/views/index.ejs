@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Infi | Security cameras Utrecht</title>
+  <!-- Video camera Icon by Martz90 available at http://www.iconarchive.com/show/circle-icons-by-martz90/video-camera-icon.html under a Creative Commons Attribution-Noncommercial-No Derivate 4.0. Full terms at http://creativecommons.org/licenses/by-nc-nd/4.0 -->
+  <link rel="icon" type="image/x-icon" href="/images/video-camera-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src='/javascripts/cameraService.js' ></script>
+</head>
+
+<body>
+<h1>Security cameras Utrecht</h1>
+<div id="map"></div>
+<div id="source">
+  source:
+  <a href="https://data.overheid.nl/dataset/camera-s">https://data.overheid.nl/dataset/camera-s</a>
+</div>
+<main>
+  <table id="cameraTableContainer">
+    <tbody>
+    <tr>
+      <td>
+        <table id="column3">
+          <thead>
+          <tr>
+            <th colspan="4">Cameras 3</th>
+          </tr>
+          <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <table id="column5">
+          <thead>
+          <tr>
+            <th colspan="4">Cameras 5</th>
+          </tr>
+          <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <table id="column15">
+          <thead>
+          <tr>
+            <th colspan="4">Cameras 3 &amp; 5</th>
+          </tr>
+          <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <table id="columnOther">
+          <thead>
+          <tr>
+            <th colspan="4">Cameras Overig</th>
+          </tr>
+          <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</main>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE&callback=initMap&libraries=&v=weekly"></script>
+<script>
+  getColumns();
+</script>
+</body>
+
+</html>
+
